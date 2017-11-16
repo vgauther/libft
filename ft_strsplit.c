@@ -19,7 +19,7 @@ static int		remplir(char const *s, char **tab, int *tab1, char c)
 
 	j = 0;
 	x = tab1[0];
-	while (s[tab1[0]] != c)
+	while (s[tab1[0]] != c && s[tab1[0]] != '\0')
 		tab1[0] += 1;
 	if (!(tab[tab1[1]] = (char *)malloc(sizeof(char) * tab1[0] - x + 1)))
 		return (0);

@@ -21,7 +21,7 @@ void	ft_putstr(char *str)
 	{
 		while (str[i])
 		{
-			ft_putchar(str[i]);
+			write(1, &str[i], 1);
 			i++;
 		}
 	}
