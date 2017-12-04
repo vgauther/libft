@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vgauther <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/12 16:17:19 by vgauther          #+#    #+#             */
-/*   Updated: 2017/11/12 18:41:20 by vgauther         ###   ########.fr       */
+/*   Created: 2017/12/04 13:00:34 by vgauther          #+#    #+#             */
+/*   Updated: 2017/12/04 13:00:39 by vgauther         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *neww)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	neww->next = *alst;
-	*alst = neww;
+	new->next = *alst;
+	*alst = new;
 }
