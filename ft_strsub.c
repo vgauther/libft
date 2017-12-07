@@ -12,6 +12,11 @@
 
 #include <stdlib.h>
 
+/*
+** fonction qui renvoie une une string a partir de s en fonction
+** de start et de len
+*/
+
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*tab;
