@@ -6,7 +6,7 @@
 #    By: vgauther <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 14:13:38 by vgauther          #+#    #+#              #
-#    Updated: 2017/11/13 11:23:53 by vgauther         ###   ########.fr        #
+#    Updated: 2017/12/11 16:32:37 by vgauther         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,17 +29,18 @@ ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
 all: $(NAME)
 
 %.o: %.c
-	gcc $(FLAGS) -c -o $@ $<
+	@gcc $(FLAGS) -c -o $@ $<
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
+	@echo "lib done"
 
 clean:
-	/bin/rm -f $(OBJ)
+	@/bin/rm -f $(OBJ)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	@/bin/rm -f $(NAME)
 
 re : fclean all
 
