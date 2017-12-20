@@ -25,10 +25,11 @@ ft_strsub.o ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_itoa.o ft_putendl.o \
 ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o\
 ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
 
+OBJ1 = $(addprefix src/, OBJ)
 
 all: $(NAME)
 
-%.o: %.c
+%.o: src/%.c
 	@gcc $(FLAGS) -c -o $@ $<
 
 $(NAME): $(OBJ)
