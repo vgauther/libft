@@ -6,7 +6,7 @@
 /*   By: vgauther <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/04 13:01:47 by vgauther          #+#    #+#             */
-/*   Updated: 2017/12/04 13:01:49 by vgauther         ###   ########.fr       */
+/*   Updated: 2017/12/24 15:40:43 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list	*list;
-	void	*content1;
 
-	content1 = (void *)content;
 	list = malloc(sizeof(t_list));
 	if (!content)
 	{

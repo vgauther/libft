@@ -6,7 +6,7 @@
 /*   By: vgauther <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 11:08:54 by vgauther          #+#    #+#             */
-/*   Updated: 2017/11/11 17:36:23 by vgauther         ###   ########.fr       */
+/*   Updated: 2017/12/24 15:38:50 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 char	*ft_strncpy(char *dest, const char *src, unsigned int n)
 {
 	unsigned int	i;
-	int				t;
 
 	i = 0;
-	t = n;
 	if (n == 0 && !(src))
 	{
 		dest[0] = '\0';
