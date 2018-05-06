@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vgauther <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: vgauther <vgauther@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 14:13:38 by vgauther          #+#    #+#              #
-#    Updated: 2017/12/11 16:32:37 by vgauther         ###   ########.fr        #
+#    Updated: 2018/05/06 21:20:16 by vgauther         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,11 +25,10 @@ ft_strsub.o ft_strjoin.o ft_strtrim.o ft_strsplit.o ft_itoa.o ft_putendl.o \
 ft_putnbr.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o\
 ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o ft_lstmap.o
 
-OBJ1 = $(addprefix src/, OBJ)
 
 all: $(NAME)
 
-%.o: src/%.c
+%.o: %.c
 	@gcc $(FLAGS) -c -o $@ $<
 
 $(NAME): $(OBJ)
